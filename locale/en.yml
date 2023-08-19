@@ -1,0 +1,64 @@
+flarum-com-truncating-approval:
+  admin:
+    permissions:
+      approve_posts: Approve posts with restricted formatting tags (also requires Flags permissions)
+      bypass_restricted_formatting: Exempt from formatting tag restrictions
+
+    settings:
+      lock_after_rejection:
+        label: Automatically lock discussions after rejecting
+        help: This feature requires Flarum's Lock extension to be installed and enabled
+
+      eventpost_after_rejection:
+        label: Publicly display rejections and rejection reasons
+        help: Auto-reply to a discussion with the moderator-provided reason for rejecting content
+
+      restricted_bbcodes:
+        add_new_button: Add new tag
+        description: Enter any restricted BBCodes below. Don't include the square brackets ([]).
+        empty_text: You haven't added any tags to restrict yet.
+        errors:
+          one_or_more_blanks: One or more restricted tags is blank. You must remove this entry before saving.
+        help_1: |
+          Add a formatting tag to this section to require posts including to be approved before being publicly visible.
+        help_2: |
+          Please note that some formatting can be achieved using various different tags. For example, to block media, you may need to add
+          FoF Upload's tags to this list, as well as BBCode image tags.
+        item_label: Tag
+        label: Restricted tags
+        remove_button: Remove tag
+        save_button: Save tags list
+
+      tag_note: |
+        You must enable this extension on each tag on your forum manually. If you do not, some or all tags will not be auto-moderated.
+        You can do this at the bottom of the edit tag modal on the Tags extension settings page.
+
+    tags:
+      edit_modal:
+        uses_truncating_approval: Use Truncating Approval for formatting approval in this tag
+
+  forum:
+    rejected_event_post:
+      description: "{username} removed content from a post {time}: {reason}"
+
+    post:
+      cannot_dismiss: You can't dismiss this flag.
+      dismiss_flag_button: Approve content
+      forbidden_formatting_detected: This post contains one or more elements that require approval.
+      truncate_button: Truncate content
+
+      awaiting_approval: Awaiting approval
+      awaiting_approval_tooltip: Some of this post might be hidden until approved
+
+    reject_content_modal:
+      body: We'll automatically remove the offending content from the post, and notify the user that their post was edited.
+      cancel_button: Cancel
+      confirm_truncation_button: Confirm post truncation
+      preview: Post preview after truncation
+      preview_description: If this preview contains any other content that should not be present, you'll need to manually edit this post afterwards to remove it.
+      reason_label: Truncation reason
+      reason_help: You must provide a reason why this post's content is not suitable. This will be displayed publicly.
+      title: Truncate post contents
+
+      errors:
+        reason_required_alert: You must provide a reason for the post's truncation.
