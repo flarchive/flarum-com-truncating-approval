@@ -2,13 +2,13 @@
 
 > **Read-only archive of released versions of flarum-com/truncating-approval.** Not for installation: use [Packagist](https://packagist.org/packages/flarum-com/truncating-approval) or the [upstream repository](https://github.com/flarum-com/truncating-approval).
 
-**0** versions archived · Latest: [`1.0.0-beta.1`](https://github.com/flarchive/flarum-com-truncating-approval/tree/archive/v1.0.0-beta.1) · License: `MIT` · Flarum: `^v1.8.0`
+**1** versions archived · Latest: [`1.0.0-beta.1`](https://github.com/flarchive/flarum-com-truncating-approval/tree/archive/v1.0.0-beta.1) · License: `MIT` · Flarum: `^v1.8.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `1.0.0-beta.1` | 2023-08-19 | `^v1.8.0` | [Browse](https://github.com/flarchive/flarum-com-truncating-approval/tree/archive/v1.0.0-beta.1) |
 
 Catalog entry: [packages/flarum-com-truncating-approval.json](https://github.com/flarchive/archive-index/blob/main/packages/flarum-com-truncating-approval.json)
 
